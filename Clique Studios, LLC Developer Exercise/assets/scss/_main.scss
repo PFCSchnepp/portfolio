@@ -1,0 +1,635 @@
+/* Global Styles */
+html, body {
+	font-family: $brandonGrotesque;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	@include flex-vertical-center-align;
+	max-width: 230px;
+	height: 60px;	
+	padding: 0 24px;
+	border: 2px solid white;
+	border-radius: 2px;
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	background-color: transparent;
+	color: white;
+	@include transition(background-color .5s ease-out);
+
+	&:hover {
+		background-color: white;
+		color: $cliqueOrange;
+		@include transition(background-color .5s ease-out);
+	}
+
+	&.btn-orange {
+		border-color: $cliqueOrange;
+		color: $cliqueOrange;
+
+		&:hover {
+			background-color: $cliqueOrange;
+			color: white;
+		}		
+	}
+}
+
+/* Header & Main Navigation Styles */
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	.clique-logo {
+		position: absolute;
+		width: 110px;
+		height: 110px;
+		background-color: $cliqueOrange;
+		color: white;
+		@include flex-vertical-center-align;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background: url("../images/logos/logo.svg") no-repeat 50%;
+			background-size: 65%;
+			color: $cliqueOrange;
+		}
+	}
+
+	nav {
+		position: relative;
+		left: 110px;
+		height: 110px;
+		color: white;
+		width: 85%;
+		@include flex-vertical-align;
+		justify-content: space-around;
+
+		.nav-links {
+			flex: 1 1 auto;
+			order: 0;
+
+			ul {
+				list-style: none;
+				font-size: 0.813rem;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				li {
+					display: inline;
+					margin-right: 2.500rem;
+
+					a {
+						display: inline-block;
+						color: white;
+
+						&:after {
+							display: block;
+							content: '';
+							width: 0;
+							height: 2px;
+							margin-top: .938rem;
+							background: $cliqueOrange;
+							@include transition(width .3s);
+						}
+
+						&:hover {
+							&:after {
+								width: 100%;
+							}
+						}
+
+						&.active {
+							&:after {
+								width: 100%;
+							}
+						}
+					}					
+				}
+			}
+		}
+
+		.phone-number {
+			flex: 0 1 auto;
+			@include transparent-box(.75rem, 0.938rem);
+			font-family: $crimsonText;
+
+			span {
+				color: white;
+			}
+		}
+	}
+}
+
+/* Main Content */
+/* Main Tagline Section */
+.main-tagline {
+	padding: 7.5rem 0 7.5rem 9.375rem;
+	color: white;
+	background: url("../images/heros/main-hero.png") no-repeat center;
+	background-size: cover;
+	width: 100%;	
+
+	h1 {
+		margin: 0 0 75px 0;
+		padding: 0;
+		max-width: 80%;
+		font-family: $crimsonText;
+		font-size: 3.750rem;
+		font-weight: normal;
+		line-height: 1.5em;
+
+		span {
+			display: inline-block;
+			@include transparent-box(20px, 22px);
+			font-family: $brandonGrotesque;
+			font-size: 2rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			line-height: .5em;
+		}
+	}
+
+	.build-something {
+		display: inline-block;
+		margin: 0 0 2em 0;
+		padding: 0 0 .5em 0;
+		font-size: 20px;
+		font-weight: normal;
+		text-transform: uppercase;
+		border-bottom: 1px solid white;
+	}
+
+	a.btn {
+		width: 60px;
+		height: 60px;
+		padding: 0;	
+
+		i {
+			font-size: 24px;
+			padding-left: 6px;
+		}		
+	}		
+}
+
+/* Work Intro Section */
+.work-intro {
+	@include flex-vertical-align;
+	width: 100%;
+	height: 400px;
+	background: url("../images/heros/shape-hero-1.png") no-repeat center;
+	background-size: cover;
+
+	.secondary-tagline {
+		margin: 0 9.375rem;
+		padding-left: 20px;
+		border-left: 1px solid $cliqueOrange;
+		font-family: $crimsonText;
+		color: #323232;
+
+
+		h3 {
+			margin: 0 0 20px 0;
+			padding: 0;
+
+			font-size: 48px;
+			font-weight: normal;
+		}
+
+		span {
+			font-size: 24px;
+		}
+	}
+}
+
+/* Case Studies Section */
+.case-study {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
+	color: white;
+
+	&.case-study-1 {
+		background:
+            /* Background Color Overlay */
+			linear-gradient(
+				rgba(9, 51, 121, 0.9), 
+				rgba(9, 51, 121, 0.9)
+		    ),
+		    url("../images/heros/case-study-1-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-2 {
+		background:
+            /* Background Color Overlay */
+			linear-gradient(
+				rgba(190, 21, 62, 0.65), 
+				rgba(190, 21, 62, 0.75)
+		    ),
+		    url("../images/heros/case-study-2-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-3 {
+		background:
+            /* Background Color Overlay */
+			linear-gradient(
+				rgba(19, 150, 207, 0.5), 
+				rgba(19, 150, 207, 0.3)
+		    ),
+		    url("../images/heros/case-study-3-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-4 {
+		background: url("../images/heros/case-study-4-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-5 {
+		background: url("../images/heros/case-study-5-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-6 {
+		background: url("../images/heros/case-study-6-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+
+	&.case-study-7 {
+		background: url("../images/heros/case-study-7-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+	&.case-study-8 {
+		background: url("../images/heros/case-study-8-hero.png") no-repeat top center;
+		background-size: cover;
+	}
+	&.case-study-9 {
+		background: url("../images/heros/case-study-9-hero.png") no-repeat top center;
+		background-size: cover;
+	}							
+
+	.case-study-container {
+		position: relative;
+		margin-left: 151px;
+		padding: 100px 0;
+
+		h2 {
+			margin: 50px 0;
+			padding: 0;
+			max-width: 20%;
+			font-size: 60px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+		}
+
+		h3 {
+			margin: 0 0 50px 0;
+			padding: 0;
+			max-width: 39%;
+			font-size: 24px;
+			font-family: $crimsonText;
+			font-weight: normal;
+		}
+	}
+
+	.device-image {
+		position: absolute;
+		bottom: 0;
+		width: 50%;
+		height: auto;
+
+		&.llh-device {
+			right: -3%;
+		}
+
+		&.kendall-college-device {
+			right: 0;
+		}
+
+		&.first-internet-bank-device {
+			right: 0;
+		}
+
+		&.cnec-device {
+			right: -8%;
+		}
+
+		&.melting-pot-device {
+			right: -10%;
+		}
+
+		&.soc-device {
+			right: 0;
+		}
+
+		&.lori-greiner-device {
+			right: 0;
+		}
+
+		&.retrofit-device {
+			right: -5%;
+		}
+		&.denali-device {
+			right: -5%;
+		}											
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+/* Client Grid */
+.client-grid {
+	margin: 100px;
+	display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+  	grid-gap: 10px;
+
+  .client-panel-wrapper {
+  	position: relative;
+  	overflow: hidden;
+
+  	&:hover .client-panel-background-image,
+  	&:focus .client-panel-background-image {
+  		@include transform(scale, 1.2);	
+
+		&.eco-tally-bg {
+			background-image: url("../images/grid-backgrounds/eco-tally-hover-bg.png");
+		}
+		&.blue-plate-bg {
+			background-image: url("../images/grid-backgrounds/blue-plate-hover-bg.png");
+		}
+		&.authentify-bg {
+			background-image: url("../images/grid-backgrounds/authentify-hover-bg.png");
+		}
+		&.carzell-bg {
+			background-image: url("../images/grid-backgrounds/carzell-hover-bg.png");
+		}
+		&.edelson-bg {
+			background-image: url("../images/grid-backgrounds/edelson-hover-bg.png");
+		}
+		&.aligned-bg {
+			background-image: url("../images/grid-backgrounds/aligned-hover-bg.png");
+		}
+		&.varsity-vocals-bg {
+			background-image: url("../images/grid-backgrounds/varsity-vocals-hover-bg.png");
+		}
+		&.four-corners-tavern-group-bg {
+			background-image: url("../images/grid-backgrounds/fctg-hover-bg.png");
+		}
+		&.cloud-bg {
+			background-image: url("../images/grid-backgrounds/cloud-hover-bg.png");
+		}
+		&.physicians-immediate-care-bg {
+			background-image: url("../images/grid-backgrounds/pic-hover-bg.png");
+		}
+		&.incs-bg {
+			background-image: url("../images/grid-backgrounds/incs-hover-bg.png");
+		}
+		&.delta-dental-bg {
+			background-image: url("../images/grid-backgrounds/delta-dental-hover-bg.png");
+		}	
+  	}
+
+  	&:hover a,
+  	&:focus a {
+		@include transform(translate, 0)		
+  	}
+  }
+
+  .client-panel {
+  	&:before {
+  		display: block;
+  		padding-top: 100%;
+  		content: ''
+  	}
+
+  	a {
+  		position: absolute;
+  		bottom: 0;
+  		@include flex-vertical-center-align;
+  		width: 50px;
+  		height: 50px;
+  		border: 0 none;
+  		background-color: rgba(35,31,32,.5);
+  		color: white;
+  		@include transition(transform .35s);
+		@include transform(translateY, 100%);		
+
+  		&.client-link {
+  			right: 0;
+  		}
+
+  		&.client-case-study {
+  			right: 51px;
+  		}
+  	}
+  }
+
+  .client-panel-background-wrapper {
+  	overflow: hidden;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  }
+
+  .client-panel-background-image {
+  	height: 100%;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	background-size: cover;
+	@include transition(all .5s);
+
+	&.eco-tally-bg {
+		background-image: url("../images/grid-backgrounds/eco-tally-bg.png");
+	}
+	&.blue-plate-bg {
+		background-image: url("../images/grid-backgrounds/blue-plate-bg.png");
+	}
+	&.authentify-bg {
+		background-image: url("../images/grid-backgrounds/authentify-bg.png");
+	}
+	&.carzell-bg {
+		background-image: url("../images/grid-backgrounds/carzell-bg.png");
+	}
+	&.edelson-bg {
+		background-image: url("../images/grid-backgrounds/edelson-bg.png");
+	}
+	&.aligned-bg {
+		background-image: url("../images/grid-backgrounds/aligned-bg.png");
+	}
+	&.varsity-vocals-bg {
+		background-image: url("../images/grid-backgrounds/varsity-vocals-bg.png");
+	}
+	&.four-corners-tavern-group-bg {
+		background-image: url("../images/grid-backgrounds/fctg-bg.png");
+	}
+	&.cloud-bg {
+		background-image: url("../images/grid-backgrounds/cloud-bg.png");
+	}
+	&.physicians-immediate-care-bg {
+		background-image: url("../images/grid-backgrounds/pic-bg.png");
+	}
+	&.incs-bg {
+		background-image: url("../images/grid-backgrounds/incs-bg.png");
+	}
+	&.delta-dental-bg {
+		background-image: url("../images/grid-backgrounds/delta-dental-bg.png");
+	}					
+  }
+
+  .client-panel-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    img {
+    	max-width: 100%;
+    	height: auto;
+    }
+  }
+}
+
+/* Talk to Real Person Section */
+.talk-to-person {
+	@include flex-vertical-center-align;
+	flex-direction: column;
+	width: 100%;
+	height: 400px;
+	background: url("../images/heros/shape-hero-2.png") no-repeat top center;
+	background-size: cover;
+
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 40px;
+		font-family: $crimsonText;
+	}
+
+	.btn-group {
+		margin-top: 60px;
+		display: flex;
+		justify-items: center;
+		
+		a {
+			&:first-of-type {
+				margin-right: 35px;
+			}
+		}
+	}
+}
+
+/* Footer Section */
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 200px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 13px;
+		li {
+			display: inline;
+
+			&:last-of-type {
+				margin-right: 0;
+			}			
+		}			
+	}
+
+	.company-info {
+		margin-left: 100px;
+		text-transform: uppercase;
+		color: #767676;
+
+		ul {
+			li {
+				display: inline;
+				margin-right: 35px;
+
+				i {
+					margin-right: 5px;
+					color: #cdcdcd;
+
+					&.icon-phone {
+						font-size: 10px;
+					}
+
+					&.icon-pin {
+						font-size: 12px;
+					}					
+				}
+			}
+		}
+	}
+
+	.social-media {
+		display: flex;
+		margin-right: 100px;
+
+		.social-logo {
+			height: 34px;
+			margin-right: 10px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&.facebook {
+				width: 35px;
+				background: url("../images/logos/facebook-circle-logo.png") no-repeat;
+			}
+
+			&.youtube {
+				width: 36px;
+				background: url("../images/logos/youtube-circle-logo.png") no-repeat;
+			}
+
+			&.flickr {
+				width: 36px;
+				background: url("../images/logos/flickr-circle-logo.png") no-repeat;
+			}
+
+			&.twitter {
+				width: 35px;
+				background: url("../images/logos/twitter-circle-logo.png") no-repeat;
+			}
+
+			&.linkedin {
+				width: 35px;
+				background: url("../images/logos/linkedin-circle-logo.png") no-repeat;
+			}												
+
+			a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				color: transparent;
+			}
+		} 
+	}
+}

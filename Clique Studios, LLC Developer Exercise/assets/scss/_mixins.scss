@@ -1,0 +1,36 @@
+/* Flexbox Mixins */
+/* Align Vertical and Horizontal Center */
+@mixin flex-vertical-center-align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Align Vertical Center */
+@mixin flex-vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+/* Transparent Box */
+@mixin transparent-box ($padding-tb, $padding-lr) {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	padding: $padding-tb $padding-lr;
+}
+
+@mixin transition ($transition-properties) {
+  -webkit-transition: $transition-properties;
+  -moz-transition: $transition-properties;
+  -o-transition: $transition-properties;
+  transition: $transition-properties;
+}
+
+@mixin transform ($transform-property, $transform-value) {
+  -webkit-transform: #{$transform-property}unquote("(#{$transform-value})");
+  -moz-transform: #{$transform-property}unquote("(#{$transform-value})");
+  -ms-transform: #{$transform-property}unquote("(#{$transform-value})");
+  -o-transform: #{$transform-property}unquote("(#{$transform-value})");
+  transform: #{$transform-property}unquote("(#{$transform-value})");
+}
+

@@ -1,0 +1,803 @@
+/* Flexbox Mixins */
+/* Align Vertical and Horizontal Center */
+/* Align Vertical Center */
+/* Transparent Box */
+/* Custom Variables */
+/* Colors */
+/* Clique Custom Fonts */
+/* Crimson Font */
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+/* Brandon Grotesque */
+@import url("https://use.typekit.net/auz1eki.css");
+@font-face {
+  font-family: 'icomoon';
+  src: url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.eot?cwpwqc");
+  src: url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.eot?cwpwqc#iefix") format("embedded-opentype"), url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.woff2?cwpwqc") format("woff2"), url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.ttf?cwpwqc") format("truetype"), url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.woff?cwpwqc") format("woff"), url("https://i.icomoon.io/public/a50d3f598a/UntitledProject/icomoon.svg?cwpwqc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow:before {
+  content: "\e904"; }
+
+.icon-link:before {
+  content: "\e900"; }
+
+.icon-case-study:before {
+  content: "\e901"; }
+
+.icon-pin:before {
+  content: "\e902"; }
+
+.icon-phone:before {
+  content: "\e903"; }
+
+/* html reset */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* Main Stylesheet */
+/* Global Styles */
+html, body {
+  font-family: "brandon-grotesque", serif; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  height: 60px;
+  padding: 0 24px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out; }
+  .btn:hover {
+    background-color: white;
+    color: #f88601;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+  .btn.btn-orange {
+    border-color: #f88601;
+    color: #f88601; }
+    .btn.btn-orange:hover {
+      background-color: #f88601;
+      color: white; }
+
+/* Header & Main Navigation Styles */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+  header .clique-logo {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: #f88601;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .clique-logo a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: url("../images/logos/logo.svg") no-repeat 50%;
+      background-size: 65%;
+      color: #f88601; }
+  header nav {
+    position: relative;
+    left: 110px;
+    height: 110px;
+    color: white;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    header nav .nav-links {
+      flex: 1 1 auto;
+      order: 0; }
+      header nav .nav-links ul {
+        list-style: none;
+        font-size: 0.813rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+        header nav .nav-links ul li {
+          display: inline;
+          margin-right: 2.500rem; }
+          header nav .nav-links ul li a {
+            display: inline-block;
+            color: white; }
+            header nav .nav-links ul li a:after {
+              display: block;
+              content: '';
+              width: 0;
+              height: 2px;
+              margin-top: .938rem;
+              background: #f88601;
+              -webkit-transition: width 0.3s;
+              -moz-transition: width 0.3s;
+              -o-transition: width 0.3s;
+              transition: width 0.3s; }
+            header nav .nav-links ul li a:hover:after {
+              width: 100%; }
+            header nav .nav-links ul li a.active:after {
+              width: 100%; }
+    header nav .phone-number {
+      flex: 0 1 auto;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      padding: 0.75rem 0.938rem;
+      font-family: "Crimson Text", serif; }
+      header nav .phone-number span {
+        color: white; }
+
+/* Main Content */
+/* Main Tagline Section */
+.main-tagline {
+  padding: 7.5rem 0 7.5rem 9.375rem;
+  color: white;
+  background: url("../images/heros/main-hero.png") no-repeat center;
+  background-size: cover;
+  width: 100%; }
+  .main-tagline h1 {
+    margin: 0 0 75px 0;
+    padding: 0;
+    max-width: 80%;
+    font-family: "Crimson Text", serif;
+    font-size: 3.750rem;
+    font-weight: normal;
+    line-height: 1.5em; }
+    .main-tagline h1 span {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      padding: 20px 22px;
+      font-family: "brandon-grotesque", serif;
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: .5em; }
+  .main-tagline .build-something {
+    display: inline-block;
+    margin: 0 0 2em 0;
+    padding: 0 0 .5em 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid white; }
+  .main-tagline a.btn {
+    width: 60px;
+    height: 60px;
+    padding: 0; }
+    .main-tagline a.btn i {
+      font-size: 24px;
+      padding-left: 6px; }
+
+/* Work Intro Section */
+.work-intro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background: url("../images/heros/shape-hero-1.png") no-repeat center;
+  background-size: cover; }
+  .work-intro .secondary-tagline {
+    margin: 0 9.375rem;
+    padding-left: 20px;
+    border-left: 1px solid #f88601;
+    font-family: "Crimson Text", serif;
+    color: #323232; }
+    .work-intro .secondary-tagline h3 {
+      margin: 0 0 20px 0;
+      padding: 0;
+      font-size: 48px;
+      font-weight: normal; }
+    .work-intro .secondary-tagline span {
+      font-size: 24px; }
+
+/* Case Studies Section */
+.case-study {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: white; }
+  .case-study.case-study-1 {
+    background: linear-gradient(rgba(9, 51, 121, 0.9), rgba(9, 51, 121, 0.9)), url("../images/heros/case-study-1-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-2 {
+    background: linear-gradient(rgba(190, 21, 62, 0.65), rgba(190, 21, 62, 0.75)), url("../images/heros/case-study-2-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-3 {
+    background: linear-gradient(rgba(19, 150, 207, 0.5), rgba(19, 150, 207, 0.3)), url("../images/heros/case-study-3-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-4 {
+    background: url("../images/heros/case-study-4-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-5 {
+    background: url("../images/heros/case-study-5-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-6 {
+    background: url("../images/heros/case-study-6-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-7 {
+    background: url("../images/heros/case-study-7-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-8 {
+    background: url("../images/heros/case-study-8-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study.case-study-9 {
+    background: url("../images/heros/case-study-9-hero.png") no-repeat top center;
+    background-size: cover; }
+  .case-study .case-study-container {
+    position: relative;
+    margin-left: 151px;
+    padding: 100px 0; }
+    .case-study .case-study-container h2 {
+      margin: 50px 0;
+      padding: 0;
+      max-width: 20%;
+      font-size: 60px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    .case-study .case-study-container h3 {
+      margin: 0 0 50px 0;
+      padding: 0;
+      max-width: 39%;
+      font-size: 24px;
+      font-family: "Crimson Text", serif;
+      font-weight: normal; }
+  .case-study .device-image {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: auto; }
+    .case-study .device-image.llh-device {
+      right: -3%; }
+    .case-study .device-image.kendall-college-device {
+      right: 0; }
+    .case-study .device-image.first-internet-bank-device {
+      right: 0; }
+    .case-study .device-image.cnec-device {
+      right: -8%; }
+    .case-study .device-image.melting-pot-device {
+      right: -10%; }
+    .case-study .device-image.soc-device {
+      right: 0; }
+    .case-study .device-image.lori-greiner-device {
+      right: 0; }
+    .case-study .device-image.retrofit-device {
+      right: -5%; }
+    .case-study .device-image.denali-device {
+      right: -5%; }
+    .case-study .device-image img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+
+/* Client Grid */
+.client-grid {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; }
+  .client-grid .client-panel-wrapper {
+    position: relative;
+    overflow: hidden; }
+    .client-grid .client-panel-wrapper:hover .client-panel-background-image, .client-grid .client-panel-wrapper:focus .client-panel-background-image {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.eco-tally-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.eco-tally-bg {
+        background-image: url("../images/grid-backgrounds/eco-tally-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.blue-plate-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.blue-plate-bg {
+        background-image: url("../images/grid-backgrounds/blue-plate-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.authentify-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.authentify-bg {
+        background-image: url("../images/grid-backgrounds/authentify-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.carzell-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.carzell-bg {
+        background-image: url("../images/grid-backgrounds/carzell-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.edelson-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.edelson-bg {
+        background-image: url("../images/grid-backgrounds/edelson-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.aligned-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.aligned-bg {
+        background-image: url("../images/grid-backgrounds/aligned-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.varsity-vocals-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.varsity-vocals-bg {
+        background-image: url("../images/grid-backgrounds/varsity-vocals-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.four-corners-tavern-group-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.four-corners-tavern-group-bg {
+        background-image: url("../images/grid-backgrounds/fctg-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.cloud-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.cloud-bg {
+        background-image: url("../images/grid-backgrounds/cloud-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.physicians-immediate-care-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.physicians-immediate-care-bg {
+        background-image: url("../images/grid-backgrounds/pic-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.incs-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.incs-bg {
+        background-image: url("../images/grid-backgrounds/incs-hover-bg.png"); }
+      .client-grid .client-panel-wrapper:hover .client-panel-background-image.delta-dental-bg, .client-grid .client-panel-wrapper:focus .client-panel-background-image.delta-dental-bg {
+        background-image: url("../images/grid-backgrounds/delta-dental-hover-bg.png"); }
+    .client-grid .client-panel-wrapper:hover a, .client-grid .client-panel-wrapper:focus a {
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+      transform: translate(0); }
+  .client-grid .client-panel:before {
+    display: block;
+    padding-top: 100%;
+    content: ""; }
+  .client-grid .client-panel a {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0 none;
+    background-color: rgba(35, 31, 32, 0.5);
+    color: white;
+    -webkit-transition: transform 0.35s;
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%); }
+    .client-grid .client-panel a.client-link {
+      right: 0; }
+    .client-grid .client-panel a.client-case-study {
+      right: 51px; }
+  .client-grid .client-panel-background-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .client-grid .client-panel-background-image {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .client-grid .client-panel-background-image.eco-tally-bg {
+      background-image: url("../images/grid-backgrounds/eco-tally-bg.png"); }
+    .client-grid .client-panel-background-image.blue-plate-bg {
+      background-image: url("../images/grid-backgrounds/blue-plate-bg.png"); }
+    .client-grid .client-panel-background-image.authentify-bg {
+      background-image: url("../images/grid-backgrounds/authentify-bg.png"); }
+    .client-grid .client-panel-background-image.carzell-bg {
+      background-image: url("../images/grid-backgrounds/carzell-bg.png"); }
+    .client-grid .client-panel-background-image.edelson-bg {
+      background-image: url("../images/grid-backgrounds/edelson-bg.png"); }
+    .client-grid .client-panel-background-image.aligned-bg {
+      background-image: url("../images/grid-backgrounds/aligned-bg.png"); }
+    .client-grid .client-panel-background-image.varsity-vocals-bg {
+      background-image: url("../images/grid-backgrounds/varsity-vocals-bg.png"); }
+    .client-grid .client-panel-background-image.four-corners-tavern-group-bg {
+      background-image: url("../images/grid-backgrounds/fctg-bg.png"); }
+    .client-grid .client-panel-background-image.cloud-bg {
+      background-image: url("../images/grid-backgrounds/cloud-bg.png"); }
+    .client-grid .client-panel-background-image.physicians-immediate-care-bg {
+      background-image: url("../images/grid-backgrounds/pic-bg.png"); }
+    .client-grid .client-panel-background-image.incs-bg {
+      background-image: url("../images/grid-backgrounds/incs-bg.png"); }
+    .client-grid .client-panel-background-image.delta-dental-bg {
+      background-image: url("../images/grid-backgrounds/delta-dental-bg.png"); }
+  .client-grid .client-panel-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .client-grid .client-panel-logo img {
+      max-width: 100%;
+      height: auto; }
+
+/* Talk to Real Person Section */
+.talk-to-person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background: url("../images/heros/shape-hero-2.png") no-repeat top center;
+  background-size: cover; }
+  .talk-to-person h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Crimson Text", serif; }
+  .talk-to-person .btn-group {
+    margin-top: 60px;
+    display: flex;
+    justify-items: center; }
+    .talk-to-person .btn-group a:first-of-type {
+      margin-right: 35px; }
+
+/* Footer Section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px; }
+    footer ul li {
+      display: inline; }
+      footer ul li:last-of-type {
+        margin-right: 0; }
+  footer .company-info {
+    margin-left: 100px;
+    text-transform: uppercase;
+    color: #767676; }
+    footer .company-info ul li {
+      display: inline;
+      margin-right: 35px; }
+      footer .company-info ul li i {
+        margin-right: 5px;
+        color: #cdcdcd; }
+        footer .company-info ul li i.icon-phone {
+          font-size: 10px; }
+        footer .company-info ul li i.icon-pin {
+          font-size: 12px; }
+  footer .social-media {
+    display: flex;
+    margin-right: 100px; }
+    footer .social-media .social-logo {
+      height: 34px;
+      margin-right: 10px; }
+      footer .social-media .social-logo:last-of-type {
+        margin-right: 0; }
+      footer .social-media .social-logo.facebook {
+        width: 35px;
+        background: url("../images/logos/facebook-circle-logo.png") no-repeat; }
+      footer .social-media .social-logo.youtube {
+        width: 36px;
+        background: url("../images/logos/youtube-circle-logo.png") no-repeat; }
+      footer .social-media .social-logo.flickr {
+        width: 36px;
+        background: url("../images/logos/flickr-circle-logo.png") no-repeat; }
+      footer .social-media .social-logo.twitter {
+        width: 35px;
+        background: url("../images/logos/twitter-circle-logo.png") no-repeat; }
+      footer .social-media .social-logo.linkedin {
+        width: 35px;
+        background: url("../images/logos/linkedin-circle-logo.png") no-repeat; }
+      footer .social-media .social-logo a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: transparent; }
