@@ -1,0 +1,40 @@
+/* CSS Grid Mixins */
+@mixin grid-column-start-end ($col-start, $col-end) {
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+}
+
+@mixin grid-row-start-end ($row-start, $row-end) {
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+}
+
+/* Transform Mixins */
+// Generic Transformxs
+@mixin transform ($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+// Rotate Transform
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin translate ($xval, $yval) {
+  @include transform(translate(#{$xval}px, #{$yval}px));
+}
+
+@mixin translateX ($xval) {
+  @include transform(translateX(#{$xval}px));
+}
+
+@mixin translateY ($yval) {
+  @include transform(translateY(#{$yval}px));
+}
+
+
+

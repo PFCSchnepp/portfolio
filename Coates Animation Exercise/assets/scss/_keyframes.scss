@@ -1,0 +1,103 @@
+/* Sun Keyframe */
+@keyframes rotate-sun {
+  0% {
+    @include rotate(0);
+  }
+  100% {
+    @include rotate(360);
+  }
+}
+
+/* Seagull Keyframes */
+@keyframes seagull1-swoop {
+  0% {
+    @include translate(0,0);
+  }
+  50% {
+    @include translate(800, 100);
+  } 
+  100% {
+    @include translate(1000, -50);
+  }
+}
+
+@keyframes seagull2-swoop {
+  0% {
+    @include translate(0,0);
+  }
+  25% {
+    @include translate(480, 100);
+  } 
+  50% {
+    @include translate(960, -50);
+  } 
+  75% {
+    @include translate(1440, 300);
+  } 
+  100% {
+    @include translate(1920, -50);
+  }
+}
+
+@keyframes seagull3-swoop {
+  0% {
+    @include translate(0,0);
+  }
+  50% {
+    @include translate(-500, 100);
+  } 
+  100% {
+    @include translate(-800, -50);
+  }
+}
+
+
+/* Cloud Keyframes */
+@keyframes cloud-slide-left-right {
+  0% {
+    @include translateX(0);
+  }
+  100% {
+    @include translateX(1920);
+  }
+}
+
+@keyframes cloud-slide-right-left {
+  0% {
+    @include translateX(1920);
+  }
+  100% {
+    @include translateX(0);
+  }
+}
+
+/* Wave Keyframes */
+@keyframes wave-right-left {
+  0% {
+    @include translateX(0);
+  }
+  100% {
+    @include translateX(-1920);
+  }
+}
+
+@keyframes wave-left-right {
+  0% {
+    @include translateX(-1920);
+  }
+  100% {
+    @include translateX(1920);
+  }
+}
+
+@keyframes freeze-fade-in {
+  80% {
+    opacity: 0;
+  }
+   90% {
+    opacity: .95;
+  }
+   100% {
+    opacity: 1;
+  }
+}
